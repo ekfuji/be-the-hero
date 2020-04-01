@@ -1,26 +1,21 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
+import "./global.css"
+import Routes from './routes'
+//Um componente no react é uma função que retorna um elemento html
+//Quando fazemos alteração do elemento e ele é automaticamente carregado no 
+//navegador chamamos isso de - live reload 
+
 
 function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-         Hello world
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Routes></Routes>
+   
   );
 }
 
 export default App;
+ //quando utilizamos o useState ele nos retorna um array
+  //Array [valor, funcaoDeAtualizacaoDoValor]
+   //Quando um elemento html é escrito dentro do javascript
+    //a gente chama ele de JSX (Javascript XML)
